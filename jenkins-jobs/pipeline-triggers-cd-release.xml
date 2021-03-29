@@ -1,0 +1,20 @@
+<flow-definition plugin="workflow-job@2.40">
+<actions>
+<org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.4"/>
+<org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.4">
+<jobProperties/>
+<triggers/>
+<parameters/>
+<options/>
+</org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+</actions>
+<description/>
+<keepDependencies>false</keepDependencies>
+<properties/>
+<definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.89">
+<script>pipeline { agent { label 'node' } stages { stage('Build') { steps { echo 'This is the build stage' } } stage('Test') { steps { echo 'This is the test stage' } } stage('Handover to CloudBees CD') { steps { echo 'This is the Handover to CloudBees CD stage' cloudBeesFlowTriggerRelease configuration: 'CloudBees Guru CD', parameters: '{"release":{"releaseName":"Triggered by Jenkins","stages":[{"stageName":"Post Build","stageValue":false}],"pipelineName":"pipeline_Triggered by Jenkins","parameters":[]}}', projectName: 'Examples Library', releaseName: 'Triggered by Jenkins', startingStage: 'Post Build' } } } } </script>
+<sandbox>true</sandbox>
+</definition>
+<triggers/>
+<disabled>false</disabled>
+</flow-definition>
