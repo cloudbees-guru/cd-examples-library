@@ -1,9 +1,9 @@
 
 task 'Get Build Details', {
   actualParameter = [
-    'build_number': '14',
+    'build_number': '$[/javascript var args = { 	projectName: myPipelineRuntime.projectName, 	ciBuildDetailName: Object.keys(myPipelineRuntime.ciBuildDetails)[0] }; api.getCIBuildDetail(args).ciBuildDetailInfo.buildNumber; ]',
     'config_name': 'core-shared-demos',
-    'job_name': 'cd-examples-library/job/pipeline-triggers-cd-release',
+    'job_name': '$[/javascript var args = { 	projectName: myPipelineRuntime.projectName, 	ciBuildDetailName: Object.keys(myPipelineRuntime.ciBuildDetails)[0] }; var num=api.getCIBuildDetail(args).ciBuildDetailInfo.buildNumber; api.getCIBuildDetail(args).ciBuildDetailInfo.displayName.replace(\' » \',\'/job/\').replace(\' #\'+num,\'\'); ]',
     'result_outpp': '/myJobStep/buildDetails',
   ]
   subpluginKey = 'EC-Jenkins'
