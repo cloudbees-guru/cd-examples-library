@@ -42,7 +42,7 @@ try {
 	def JobId = result.jobId // capture the job id of the above runProcedure
 
     // create a link in the job report to take the user to the called procedure
-	ef.setProperty propertyName: "/myJob/report-urls/$[pluginname] CreateConfiguration Job", value: "$[/server/webServerHost]/commander/link/jobDetails/jobs/$JobId"
+	ef.setProperty propertyName: "/myJob/report-urls/$[pluginname] CreateConfiguration Job", value: "/commander/link/jobDetails/jobs/$JobId"
 
 	println "Started plugin CreateConfiguration job with id " + JobId // show jobId in the log
 
