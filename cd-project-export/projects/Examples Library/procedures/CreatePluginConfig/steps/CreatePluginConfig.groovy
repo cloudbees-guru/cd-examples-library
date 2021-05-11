@@ -4,8 +4,8 @@ import com.electriccloud.client.groovy.models.Credential
 
 ElectricFlow ef = new ElectricFlow()
 
-def Project = ef.getPlugin(pluginName: 'EC-Nexus').plugin.projectName
-def ConfigLocation = ef.getProperty(propertyName: '/plugins/' + Project + '/project/ec_config/configLocation').property.value
+def Project = ef.getPlugin(pluginName: "$[pluginname]").plugin.projectName
+def ConfigLocation = ef.getProperty(propertyName: "/projects/${Project}/ec_config/configLocation").property.value
 def configname = "$[configname]" // name of the config to create
 def instance = "$[endpoint]" // endpoint or instance to use in the plugin config
 
