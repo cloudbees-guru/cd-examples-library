@@ -1,0 +1,1 @@
+echo "normally using the Slack plugin to send a notification"
