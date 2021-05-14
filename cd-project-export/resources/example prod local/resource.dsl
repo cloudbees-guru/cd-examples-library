@@ -1,6 +1,7 @@
+def Host = getProperty("/server/hostName").value
 resource 'example prod local', {
   description = 'Local resource created during installation.'
-  hostName = 'flow-server.c.cloudbees-sa-emea-demo.internal'
+  hostName = Host
   hostType = 'CONCURRENT'
   port = '7800'
   repositoryNames = ''
