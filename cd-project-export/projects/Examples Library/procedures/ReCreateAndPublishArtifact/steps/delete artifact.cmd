@@ -1,0 +1,1 @@
+ectool deleteArtifact --artifactName "$[artifactgroup]:$[artifactkey]"

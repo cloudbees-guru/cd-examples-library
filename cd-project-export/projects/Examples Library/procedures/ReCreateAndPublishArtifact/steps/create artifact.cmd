@@ -1,0 +1,1 @@
+ectool createArtifact --groupId '$[artifactgroup]' --artifactKey  '$[artifactkey]'
