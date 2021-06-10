@@ -9,21 +9,6 @@ procedure 'CreatePluginConfig', {
     type = 'entry'
   }
 
-  formalParameter 'endpoint', {
-    description = 'Endpoint or target, e.g. https://mynexus.com'
-    label = 'Endpoint'
-    orderIndex = '5'
-    required = '1'
-    type = 'entry'
-  }
-
-  formalParameter 'password', {
-    label = 'Password'
-    orderIndex = '4'
-    required = '1'
-    type = 'entry'
-  }
-
   formalParameter 'pluginname', {
     label = 'Plugin'
     orderIndex = '2'
@@ -34,6 +19,21 @@ procedure 'CreatePluginConfig', {
   formalParameter 'userName', {
     label = 'Username'
     orderIndex = '3'
+    required = '1'
+    type = 'entry'
+  }
+
+  formalParameter 'password', {
+    label = 'Password'
+    orderIndex = '4'
+    required = '1'
+    type = 'entry'
+  }
+  
+  formalParameter 'endpoint', {
+    description = 'Endpoint or target, e.g. https://mynexus.com'
+    label = 'Endpoint'
+    orderIndex = '5'
     required = '1'
     type = 'entry'
   }
