@@ -1,5 +1,0 @@
-
-user 'developer', {
-  email = ''
-  fullUserName = ''
-}

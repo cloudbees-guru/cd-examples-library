@@ -1,5 +1,0 @@
-group 'Developers', {
-  userName = [
-    'developer',
-  ]
-}
