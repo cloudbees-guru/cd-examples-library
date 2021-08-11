@@ -29,5 +29,4 @@ procedure 'ReCreateAndPublishArtifact', {
     required = '1'
     type = 'entry'
   }
-
 }

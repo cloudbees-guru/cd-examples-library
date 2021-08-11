@@ -29,7 +29,7 @@ procedure 'CreatePluginConfig', {
     required = '1'
     type = 'entry'
   }
-  
+
   formalParameter 'endpoint', {
     description = 'Endpoint or target, e.g. https://mynexus.com'
     label = 'Endpoint'
