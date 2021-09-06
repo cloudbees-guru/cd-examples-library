@@ -3,7 +3,7 @@ task 'Docker pull image', {
   actualParameter = [
     'dockerImage': 'cloudbees-guru/spring-petclinic',
     'dockerImageVersion': '2.4.5',
-    'privateRegistry': 'true',
+    'privateRegistry': 'false',
     'registry': 'nexus.cloudbees.guru:5555',
   ]
   projectName = 'Examples Library'
