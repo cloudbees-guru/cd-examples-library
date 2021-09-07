@@ -1,0 +1,5 @@
+group 'Developers', {
+  userName = [
+    'developer',
+  ]
+}
