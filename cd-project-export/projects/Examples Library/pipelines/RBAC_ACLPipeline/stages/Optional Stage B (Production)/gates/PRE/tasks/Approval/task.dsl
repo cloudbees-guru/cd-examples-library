@@ -8,6 +8,6 @@ task 'Approval', {
   taskType = 'APPROVAL'
   useApproverAcl = '1'
   approver = [
-    'gadmin',
+    'admin',
   ]
 }
