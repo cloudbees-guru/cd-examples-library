@@ -1,13 +1,14 @@
-import java.io.File
-
 
 task 'Get Build Details', {
   actualParameter = [
-    'commandToRun': new File(projectDir, "./releases/Triggered by Jenkins/pipelines/pipeline_Triggered by Jenkins/stages/Post Build/tasks/Get Build Details.groovy").text,
-    'shellToUse': 'ec-groovy',
+    'build_number': '$[/myPipelineRuntime/BuildNumber]',
+    'config_name': 'core-shared-demos',
+    'job_name': '$[/myPipelineRuntime/BuildJobPath]',
+    'need_to_run_report': '1',
+    'result_outpp': '/myJobStep/buildDetails',
   ]
   projectName = 'Examples Library'
-  subpluginKey = 'EC-Core'
-  subprocedure = 'RunCommand'
-  taskType = 'COMMAND'
+  subpluginKey = 'EC-Jenkins'
+  subprocedure = 'GetBuildDetails'
+  taskType = 'PLUGIN'
 }
