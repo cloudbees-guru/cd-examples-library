@@ -1,5 +1,5 @@
 
-task 'Call REST', {
+task 'CallREST', {
   actualParameter = [
     'config': 'gorest.co.in',
     'contentType': 'application/json',

@@ -15,6 +15,7 @@ task 'Call REST w Bearer Token', {
     'requestType': 'PUT',
     'response_outpp': '',
   ]
+  enabled = '0'
   projectName = 'Examples Library'
   subpluginKey = 'EC-Rest'
   subprocedure = 'runRest'
