@@ -1,0 +1,9 @@
+use ElectricCommander;
+push (@::gMatchers,
+{
+   id => "returnedValue",
+   pattern => q{(.*)},
+   action => q{
+   setProperty("/myJob/result", "$1");
+   }
+});

@@ -1,0 +1,1 @@
+ sed -i '/<socket-binding name="ajp" port="8009"\/>/d' /tmp/jboss-example.xml

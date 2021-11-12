@@ -1,0 +1,1 @@
+grep -oP 'jboss.management.native.port:\K\d+(?=})' /tmp/jboss-example.xml

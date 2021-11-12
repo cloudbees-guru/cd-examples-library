@@ -1,0 +1,1 @@
+sed -i 's/<socket-binding name="management-native" interface="management" port="${jboss.management.native.port:9999}"/<socket-binding name="management-native" interface="management" port="${jboss.management.native.port:$[/myPipeline/managamentNativePort]}"/g' /tmp/jboss-example.xml
