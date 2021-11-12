@@ -47,4 +47,24 @@ process 'App 2 Deployment Process', {
       ec_notifierStatus = '0'
     }
   }
+
+  processStep 'Rollback', {
+    dependencyJoinType = 'and'
+    processStepType = 'rollback'
+    projectName = 'Examples Library'
+    rollbackType = 'environment'
+    smartRollback = '0'
+
+    // Custom properties
+
+    property 'ec_deploy', {
+
+      // Custom properties
+      ec_notifierStatus = '0'
+    }
+  }
+
+  processDependency 'deploy component', targetProcessStepName: 'Rollback', {
+    branchType = 'ERROR'
+  }
 }

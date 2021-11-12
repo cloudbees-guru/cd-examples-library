@@ -1,6 +1,7 @@
 
-environment ' Example PROD', {
+environment 'Example PROD', {
   projectName = 'Examples Library'
+  reservationRequired = '0'
 
   environmentTier 'Frontend Tier', {
     resourceName = [

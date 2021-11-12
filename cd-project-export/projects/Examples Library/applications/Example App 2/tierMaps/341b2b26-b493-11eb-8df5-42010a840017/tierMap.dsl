@@ -1,7 +1,7 @@
 
 tierMap '341b2b26-b493-11eb-8df5-42010a840017', {
   applicationName = 'Example App 2'
-  environmentName = ' Example PROD'
+  environmentName = 'Example PROD'
   environmentProjectName = 'Examples Library'
   projectName = 'Examples Library'
 

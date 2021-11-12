@@ -1,5 +1,5 @@
 
-process 'App 1 Deployment Process', {
+process 'undeploy App 1', {
   applicationName = 'Example App 1'
   exclusiveEnvironment = '0'
   processType = 'OTHER'
@@ -30,7 +30,7 @@ process 'App 1 Deployment Process', {
     type = 'checkbox'
   }
 
-  processStep 'deploy component', {
+  processStep 'Comp 1', {
     applicationTierName = 'Frontend Tier'
     dependencyJoinType = 'and'
     processStepType = 'process'

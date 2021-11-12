@@ -1,6 +1,7 @@
 
-environment ' Example UAT', {
+environment 'Example UAT', {
   projectName = 'Examples Library'
+  reservationRequired = '0'
 
   environmentTier 'Frontend Tier', {
     resourceName = [
