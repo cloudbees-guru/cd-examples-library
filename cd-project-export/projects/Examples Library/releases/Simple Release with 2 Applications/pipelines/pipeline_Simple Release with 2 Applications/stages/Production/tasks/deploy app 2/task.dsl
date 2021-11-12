@@ -5,7 +5,7 @@ task 'deploy app 2', {
     'ec_smartDeployOption': '1',
     'ec_stageArtifacts': '1',
   ]
-  environmentName = ' Example PROD'
+  environmentName = 'Example PROD'
   environmentProjectName = 'Examples Library'
   projectName = 'Examples Library'
   rollingDeployEnabled = '0'
