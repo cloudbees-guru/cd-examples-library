@@ -1,4 +1,4 @@
-def Host = getProperty(propertyName: "/server/hostName").value
+def Host = getResource(resourceName: "local").hostName
 resource 'example prod local', {
   description = 'Local resource created during installation.'
   hostName = Host
