@@ -1,1 +1,6 @@
 .DS_Store
+.idea/
+cd-project-export/projects/Examples Library/pipelines/SmokeTest/stages/Components/Components.iml
+cd-project-export/projects/Examples Library/pipelines/SmokeTest/stages/Settings/Settings.iml
+cd-project-export/projects/Examples Library/pipelines/XML Examples/XML Examples.iml
+cd-project-export/projects/Examples Library/procedures/procedures.iml
