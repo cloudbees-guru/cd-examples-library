@@ -1,1 +1,0 @@
-echo "UAT Tests performed"

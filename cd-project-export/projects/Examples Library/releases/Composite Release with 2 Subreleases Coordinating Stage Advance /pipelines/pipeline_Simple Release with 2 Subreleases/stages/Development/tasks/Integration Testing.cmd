@@ -1,1 +1,0 @@
-echo "Integration Tests performed"
