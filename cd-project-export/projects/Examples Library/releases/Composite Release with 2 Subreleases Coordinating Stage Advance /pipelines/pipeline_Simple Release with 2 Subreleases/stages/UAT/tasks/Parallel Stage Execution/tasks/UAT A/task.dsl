@@ -1,13 +1,16 @@
 
-task 'Subrelease A', {
+task 'UAT A', {
   actualParameter = [
-    'stageSleepSeconds': '10',
+    'stageSleepSeconds': '5',
   ]
-  groupName = 'Parallel subreleases'
+  groupName = 'Parallel Stage Execution'
   projectName = 'Examples Library'
   subErrorHandling = 'stopOnError'
   subproject = 'Examples Library'
-  subrelease = 'Composite Examples Subrelease A'
+  subrelease = 'Subrelease A'
   taskType = 'RELEASE'
   triggerType = 'sync'
+  stagesToRun = [
+    'UAT',
+  ]
 }
