@@ -6,14 +6,4 @@ During an execution the "Release portfolio" and "Release Portfolio list" views a
   plannedEndDate = '2022-03-17'
   plannedStartDate = '2022-03-03'
   projectName = 'Examples Library'
-
-  subrelease {
-    subreleaseName = 'Composite Examples Subrelease B'
-    subreleaseProject = 'Examples Library'
-  }
-
-  subrelease {
-    subreleaseName = 'Composite Examples Subrelease A'
-    subreleaseProject = 'Examples Library'
-  }
 }
