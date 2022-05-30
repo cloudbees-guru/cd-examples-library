@@ -8,12 +8,12 @@ During an execution the "Release portfolio" and "Release Portfolio list" views a
   projectName = 'Examples Library'
 
   subrelease {
-    subreleaseName = 'Subrelease B'
+    subreleaseName = 'Composite Examples Subrelease B'
     subreleaseProject = 'Examples Library'
   }
 
   subrelease {
-    subreleaseName = 'Subrelease A'
+    subreleaseName = 'Composite Examples Subrelease A'
     subreleaseProject = 'Examples Library'
   }
 }
