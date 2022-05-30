@@ -7,7 +7,7 @@ task 'Subrelease A', {
   projectName = 'Examples Library'
   subErrorHandling = 'stopOnError'
   subproject = 'Examples Library'
-  subrelease = 'Composite Examples Subrelease A'
+  subrelease = 'Subrelease A'
   taskType = 'RELEASE'
   triggerType = 'sync'
 }
