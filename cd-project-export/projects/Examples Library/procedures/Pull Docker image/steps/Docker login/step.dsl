@@ -9,6 +9,7 @@ step 'Docker login', {
   projectName = 'Examples Library'
   subprocedure = ''
   subproject = ''
+  timeLimit = '0'
   timeLimitUnits = 'seconds'
 
   attachParameter {

@@ -5,9 +5,9 @@ task 'Subrelease A', {
   ]
   groupName = 'Parallel subreleases'
   projectName = 'Examples Library'
-  subErrorHandling = 'stopOnError'
+  subErrorHandling = 'continueOnError'
   subproject = 'Examples Library'
   subrelease = 'Composite Examples Subrelease A'
   taskType = 'RELEASE'
-  triggerType = 'sync'
+  triggerType = 'async'
 }

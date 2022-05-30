@@ -7,5 +7,6 @@ step 'CreatePluginConfig', {
   shell = 'ec-groovy'
   subprocedure = ''
   subproject = ''
+  timeLimit = '0'
   timeLimitUnits = 'seconds'
 }

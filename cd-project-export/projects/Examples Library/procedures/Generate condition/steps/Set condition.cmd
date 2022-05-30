@@ -1,0 +1,1 @@
+ectool setOutputParameter condition 1
