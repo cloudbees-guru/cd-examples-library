@@ -1,6 +1,7 @@
 
 procedure 'CreatePluginConfig', {
   projectName = 'Examples Library'
+  timeLimit = '0'
 
   formalParameter 'configname', {
     label = 'Config Name'

@@ -8,5 +8,6 @@ step 'Pull image', {
   projectName = 'Examples Library'
   subprocedure = ''
   subproject = ''
+  timeLimit = '0'
   timeLimitUnits = 'seconds'
 }

@@ -6,6 +6,9 @@ environment 'Example PROD', {
   environmentTier 'Frontend Tier', {
     resourceName = [
       'example prod local',
+      'local',
     ]
   }
+
+  tag 'prod'
 }

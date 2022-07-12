@@ -1,6 +1,7 @@
 
 procedure 'Pull Docker image', {
   projectName = 'Examples Library'
+  timeLimit = '0'
 
   formalParameter 'registry', {
     description = '''The URL of the Docker registry.
@@ -28,9 +29,6 @@ Example: registry.hub.docker.com'''
     orderIndex = '3'
     renderCondition = '${privateRegistry} == true'
     type = 'credential'
-    validationDsl = '''if (args.parameters[\'privateRegistry\'] == \'true\') {
-  return getFullCredential(credentialName: \'credentials\')
-}'''
   }
 
   formalParameter 'dockerImage', {

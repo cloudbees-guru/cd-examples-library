@@ -1,0 +1,1 @@
+https://github.com/cloudbees-guru/cd-examples-library.git

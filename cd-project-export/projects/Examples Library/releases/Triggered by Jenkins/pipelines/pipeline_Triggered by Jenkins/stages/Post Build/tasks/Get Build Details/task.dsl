@@ -7,6 +7,7 @@ task 'Get Build Details', {
     'need_to_run_report': '1',
     'result_outpp': '/myJobStep/buildDetails',
   ]
+  enabled = '0'
   projectName = 'Examples Library'
   subpluginKey = 'EC-Jenkins'
   subprocedure = 'GetBuildDetails'

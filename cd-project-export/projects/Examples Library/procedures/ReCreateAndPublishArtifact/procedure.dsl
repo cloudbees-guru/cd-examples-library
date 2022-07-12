@@ -1,6 +1,7 @@
 
 procedure 'ReCreateAndPublishArtifact', {
   projectName = 'Examples Library'
+  timeLimit = '0'
 
   formalParameter 'uploaddir', defaultValue: '/tmp/import-dsl-from-git', {
     label = 'Upload from directory'
