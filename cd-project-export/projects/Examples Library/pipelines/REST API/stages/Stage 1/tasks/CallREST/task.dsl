@@ -1,7 +1,7 @@
 
 task 'CallREST', {
   actualParameter = [
-    'config': 'gorest.co.in',
+    'config': '/projects/Examples Library/pluginConfigurations/gorest.co.in',
     'contentType': 'application/json',
     'cookieHeaderValue': '',
     'filePath': '',
@@ -12,8 +12,12 @@ task 'CallREST', {
     'postScriptContent': '',
     'postScriptOutput': '',
     'postScriptShell': '',
+    'requestTimeout': '',
     'requestType': 'GET',
     'response_outpp': '',
+    'responseContentPolling': '',
+    'targetFile': '',
+    'writeToFile': 'false',
   ]
   projectName = 'Examples Library'
   stageSummaryParameters = '[{"name":"body","label":"body"}]'

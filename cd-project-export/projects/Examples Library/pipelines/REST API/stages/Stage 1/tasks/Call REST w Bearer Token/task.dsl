@@ -1,7 +1,7 @@
 
 task 'Call REST w Bearer Token', {
   actualParameter = [
-    'config': 'gorest.co.in',
+    'config': '/projects/Examples Library/pluginConfigurations/gorest.co.in',
     'contentType': 'application/json',
     'cookieHeaderValue': '',
     'filePath': '',
@@ -12,8 +12,12 @@ task 'Call REST w Bearer Token', {
     'postScriptContent': '',
     'postScriptOutput': '',
     'postScriptShell': '',
+    'requestTimeout': '',
     'requestType': 'PUT',
     'response_outpp': '',
+    'responseContentPolling': '',
+    'targetFile': '',
+    'writeToFile': 'false',
   ]
   enabled = '0'
   projectName = 'Examples Library'

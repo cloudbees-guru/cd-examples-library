@@ -7,6 +7,7 @@ process 'Deploy Microservice Process', {
 
   processStep 'Retrieve Artifact', {
     description = 'System generated step to retrieve microservice definition artifact'
+    dependencyJoinType = 'and'
     processStepType = 'plugin'
     projectName = 'Examples Library'
     subprocedure = 'Source Provider'
@@ -15,6 +16,7 @@ process 'Deploy Microservice Process', {
 
   processStep 'Deploy Microservice', {
     description = 'System generated step to deploy microservice'
+    dependencyJoinType = 'and'
     processStepType = 'plugin'
     projectName = 'Examples Library'
     subprocedure = 'Deploy Service'
