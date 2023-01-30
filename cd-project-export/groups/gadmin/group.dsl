@@ -1,0 +1,5 @@
+group 'gadmin', {
+  userName = [
+    'admin',
+  ]
+}
