@@ -8,6 +8,13 @@ acl {
     modifyPrivilege = 'inherit'
     readPrivilege = 'allow'
   }
+  
+  aclEntry 'group', principalName: 'SDAAdmins', {
+    changePermissionsPrivilege = 'allow'
+    executePrivilege = 'allow'
+    modifyPrivilege = 'allow'
+    readPrivilege = 'allow'
+  }
 
   aclEntry 'user', principalName: 'admin', {
     changePermissionsPrivilege = 'allow'
